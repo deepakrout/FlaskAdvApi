@@ -56,7 +56,7 @@ class Item(Resource):
             return {"message": "Item deleted."}, 200
         return {"message": "Item not found."}, 404
 
-    def put(self, name: str):
+    def put(self, name: str) -> Dict:
         data = Item.parser.parse_args()
 
         item = ItemModel.find_by_name(name)
