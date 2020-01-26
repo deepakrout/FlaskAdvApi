@@ -1,7 +1,7 @@
 from typing import Dict, List
 from db import db
 
-
+#Store model with SQL Alchemy
 class StoreModel(db.Model):
     __tablename__ = "stores"
 
